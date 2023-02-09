@@ -169,35 +169,16 @@ body{
 .price__element{
     background-color:#e5e5f7;
     text-align: center;
-    border-radius: 10px;
-    width: 330px;
+    border-radius: 90px;
+    border: 1px solid #5454D4;
+    width: 200px;
     padding: 40px;
-    --color-plan: #696871;
-    --color-price: #1D293F;
-    --bg-cta:#fff;
-    --color-cta: #5454D4;
-    --color-items: #696871;
+    --color-items: #5454D4;
 }
-
-.price__element--best{
-    width: 370px;
-    padding: 60px 40px;
-    background-color: #FF7143;
-    --color-plan: rgb(255 255 255 / 75%);
-    --color-price: #fff;
-    --bg-cta:#9F3919;
-    --color-cta: #fff;
-    --color-items: #fff;
-}
-
 .price__name{
     color: var(--color-plan);
     margin-bottom: 15px;
     font-weight: 300;
-}
-.price__price{
-    font-size: 2.5rem;
-    color: var(--color-price);
 }
 .price__items{
     margin-top: 35px;
@@ -208,23 +189,13 @@ body{
     margin-bottom: 50;
     color: var(--color-items)
 }
-.price__cta{
-    display: block;
-    padding: 20px 0;
-    border-radius: 10px;
-    text-decoration: none;
-    background-color: var(--bg-cta);
-    font-weight: 600;
-    color: var(--color-cta);
-    box-shadow: 0 0 1px rgb(0, 0, 0, .5);
-}
 .testimony{
-    background-color: #e5e5f7;
+    background-color: #edededc7;
 }
 .testimony__container{ 
     display: flex;
     display: grid;
-    grid-template-columns: 40px 1fr 50px;
+    grid-template-columns: 40px 1fr 40px;
     gap: 1em;
     align-items: center;
 }
@@ -267,12 +238,6 @@ body{
 .testimony__arrow{
     width: 65%;
     cursor: pointer;
-}
-.testiarrowleft{
-    width: auto;
-}
-.testiarrowright{
-    width: auto;
 }
 .questions{
     text-align: center;
@@ -412,7 +377,7 @@ body{
     }
     .nav__link--menu{
         position: fixed;
-        background-color: #000;
+        background-color: #000000de;
         top: 0;
         left: 0;
         height: 100%;
@@ -424,7 +389,6 @@ body{
         z-index: 100;
         opacity: 0;
         pointer-events: none;
-        transition: 0.7s opacity;
     }
     .nav__link--show{
         --show: block;
@@ -463,7 +427,7 @@ body{
     .testimony__body{
         grid-template-columns: 1fr;
         grid-template-rows: max-content max-content;
-        gap: 3em;
+        gap: 1em;
         justify-items: center;
     }
     .testimony__img{
@@ -509,24 +473,20 @@ body{
     .price__element--best{
         width: 90%;
     }
-    .price__price{
-        font-size: 2rem;
-    }
     .testimony{
-        --padding-container: 60px 0;
+
+        --padding-container: 30px 0 30px;
+    }
+    .testimony__body{
+        gap: 2.5em;
+        padding-top: 60px;
+        display: grid;
     }
     .testimony__container{
-        grid-template-columns: 20px 1fr 28px;
-        gap: .9em;
+        grid-template-columns: 20px 0fr 20px;
     }
     .testimony__arrow{
         width: 100%;
-    }
-    .testiarrowleft{
-        width: auto;
-    }
-    .testiarrowright{
-        width: auto;
     }
     .testimony__course{
     margin-top: 15px;
