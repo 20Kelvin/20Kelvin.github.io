@@ -221,10 +221,10 @@ body{
 .testimony{
     background-color: #e5e5f7;
 }
-.testimony__container{
+.testimony__container{ 
     display: flex;
     display: grid;
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: 40px 1fr 50px;
     gap: 1em;
     align-items: center;
 }
@@ -265,8 +265,14 @@ body{
     color: royalblue;
 }
 .testimony__arrow{
-    width: 90%;
+    width: 65%;
     cursor: pointer;
+}
+.testiarrowleft{
+    width: auto;
+}
+.testiarrowright{
+    width: auto;
 }
 .questions{
     text-align: center;
@@ -515,6 +521,12 @@ body{
     }
     .testimony__arrow{
         width: 100%;
+    }
+    .testiarrowleft{
+        width: auto;
+    }
+    .testiarrowright{
+        width: auto;
     }
     .testimony__course{
     margin-top: 15px;
